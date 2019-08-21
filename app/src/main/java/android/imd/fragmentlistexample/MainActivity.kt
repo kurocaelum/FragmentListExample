@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity(), AlimentoListFragment.OnItemClickAlimen
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        textFragment = supportFragmentManager.findFragmentById(R.id.frag_text) as TextFragment
     }
 
     override fun onClick(alimento: Alimento) {
